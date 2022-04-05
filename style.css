@@ -1,0 +1,81 @@
+@font-face {
+	font-family: "Rounded Elegance";
+	src: url("./assets/fonts/rounded elegance.woff") format("woff");
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+header {
+	display: flex;
+	flex-direction: column;
+}
+header a {
+	text-decoration: none;
+	color: inherit;
+}
+header * {
+	margin: 0;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+header nav {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color: black;
+}
+header nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+header nav ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+header nav ul li:last-child {
+	margin-left: auto;
+}
+#header-title {
+	font-size: 4em;
+	font-family: "Rounded Elegance";
+	color: white;
+	text-transform: uppercase;
+	display: flex;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+	background-color: #3399cc;
+}
+main {
+	margin: 0;
+	padding-top: 2em;
+	padding-left: 4em;
+	padding-right: 4em;
+}
+#news {
+	border: solid 1px;
+	display: inline-flex;
+	flex-direction: column;
+}
+#news > * {
+	margin: 0;
+}
+#news h1 {
+	padding: 0.5em 1em;
+}
+#news ul {
+	list-style: none;
+	padding-bottom: 1em;
+	padding-right: 2em;
+}
+#news ul li::before {
+	content: "-";
+	margin-right: 1em;
+}
+#news ul li {
+	line-height: 2em;
+}
